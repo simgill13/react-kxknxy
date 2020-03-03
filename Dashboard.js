@@ -6,9 +6,9 @@ const DashBoard = () => {
   // console.log(data);
   return (
     <>
-      <div>
-        header
-        <button onClick={add}> add </button>
+      <div style={{textAlign:'center'}}>
+        Select a machine
+        <button style={{float:'right'}} onClick={add}> + </button>
       </div>
 
       {data.map((device, index) => {
