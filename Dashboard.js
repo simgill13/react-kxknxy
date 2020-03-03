@@ -13,7 +13,7 @@ const DashBoard = () => {
 
       {data.map((device, index) => {
         return (
-          <div key={device.id}>
+          <div style={{border:'solid'}} key={device.id}>
             <p>{device.label} </p>
             <button onClick={e => deleteObj(index)}> delete </button>
           </div>

@@ -7,9 +7,10 @@ const Login = ({isAuthenticated}) => {
     <>
       <div className='welcome-header'> Welcome </div>
       <form name="Login" onSubmit={(e)=>validate(e)}>
-        LOGIN
+        <p className='form-name' >LOGIN</p>
         <br />
         <input
+          className='form-input'
           required
           onChange={e => setEmail(e.target.value)}
           type="text"
@@ -17,12 +18,13 @@ const Login = ({isAuthenticated}) => {
           name="email"
         />
         <input
+         className='form-input'
           required
           type='password'
           onChange={e => setPassword(e.target.value)}
           placeholder="password"
         />
-        <button type="submit" >
+        <button  className='form-input' type="submit" >
           login
         </button>
       </form>

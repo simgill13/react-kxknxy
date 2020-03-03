@@ -17,3 +17,14 @@ h1, p {
     margin: auto;
     padding: 10px;
     }
+
+   .form-input{
+      display: block;
+   
+    margin: 20px;
+    }
+
+    .form-name{
+      padding-left: 20px;
+    color: #3677f6;
+    }
