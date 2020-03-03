@@ -1,0 +1,19 @@
+body {
+  padding:0%;
+  margin: 0px;
+  background-color: rgb(201, 200, 200)
+}
+h1, p {
+  font-family: Lato;
+}
+
+.welcome-header {height: 25px;
+    border: solid;
+    text-align: center;
+    background: cornflowerblue;
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    }
