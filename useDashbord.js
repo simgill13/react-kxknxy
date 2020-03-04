@@ -1,16 +1,19 @@
 import React from "react";
 import list from "./data.json";
-import {generateObj} from './util'
+import {generateObj,checkData} from './util'
 
 export const useDashboard = () => {
   const [data, setData] = React.useState([]);
+  const [money, setMoney] = React.useState(25);
 
   React.useEffect(() => {
     setData(list.devices);
   }, []);
 
   const add = () => {
-    setData([...data, generateObj(data)]);
+    const addObj = generateObj(data);
+    const check = checkData(addObj,data);
+    setData([...data, addObj]);
   };
 
   const deleteObj = i => {
@@ -23,6 +26,8 @@ export const useDashboard = () => {
     data,
     setData,
     add,
-    deleteObj
+    deleteObj,
+    money,
+    setMoney
   };
 };
