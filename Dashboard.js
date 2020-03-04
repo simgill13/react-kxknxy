@@ -26,7 +26,7 @@ const DashBoard = () => {
       })}
       <div style={{ textAlign: "center" }}>
         Balance ${money}
-        <button onClick={() => setMoney(money + 5)} style={{ float: "right" }}>
+        <button onClick={() => setMoney(money + 5)} className="dash-add-machine">
           +
         </button>
       </div>

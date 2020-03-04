@@ -34,5 +34,7 @@ h1, p {
     }
 
     .dash-add-machine{
-      float:right
+      float:right;
+      background-color:cornflowerblue;
+      color:white
     }
