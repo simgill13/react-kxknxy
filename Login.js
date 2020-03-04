@@ -2,7 +2,7 @@ import React from "react";
 import { useLogin } from "./useLogin";
 
 const Login = ({isAuthenticated}) => {
-  const { validate, setEmail, setPassword } = useLogin(isAuthenticated);
+  const { validate, setEmail, setPassword ,err} = useLogin(isAuthenticated);
   return (
     <>
       <div className='welcome-header'> Welcome </div>
@@ -17,6 +17,7 @@ const Login = ({isAuthenticated}) => {
           placeholder="email"
           name="email"
         />
+        
         <input
          className='form-input'
           required
@@ -27,7 +28,7 @@ const Login = ({isAuthenticated}) => {
         <button  className='form-input' type="submit" >
           login
         </button>
-
+        <p  className='form-input'> {err}</p>
          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <p> disclaimer - due to busy schedule did not have time to style the application :( But  All functionality is there</p>
       </form>

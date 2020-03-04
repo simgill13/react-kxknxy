@@ -3,6 +3,7 @@ import React from "react";
 export const useLogin = (isAuthenticated) => {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
+   const [err, setErr] = React.useState('');
 
   React.useEffect(() => {
     isAuthenticated ? (document.location.href = "/") : null;
@@ -27,6 +28,8 @@ export const useLogin = (isAuthenticated) => {
     const verifiedPassword = await validatePassword(password);
     if(verifiedEmail && verifiedPassword) {
       setAuth();
+    }else{
+      setErr('invalid email ')
     };
     
   };
@@ -34,6 +37,7 @@ export const useLogin = (isAuthenticated) => {
   return {
     validate,
     setEmail,
-    setPassword
+    setPassword,
+    err
   };
 };
