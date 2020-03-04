@@ -27,6 +27,9 @@ const Login = ({isAuthenticated}) => {
         <button  className='form-input' type="submit" >
           login
         </button>
+
+         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <p> disclaimer - due to busy schedule did not have time to style the application :( But  All functionality is there</p>
       </form>
     </>
   );
